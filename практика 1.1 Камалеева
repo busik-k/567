@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float celsius, fahrenheit;
+    
+    // Запрашиваем ввод температуры в градусах Цельсия
+    printf("Введите температуру в градусах Цельсия: ");
+    scanf("%f", &celsius);
+    
+    // Преобразуем Цельсии в Фаренгейты
+    fahrenheit = (celsius * 9 / 5) + 32;
+    
+    // Выводим результат с двумя знаками после запятой
+    printf("C = %.0f ; F = %.2f\n", celsius, fahrenheit);
+    
+    return 0;
+}
